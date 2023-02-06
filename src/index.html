@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Interest Calculator</title>
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+
+<body class=" flex flex-col px-5">
+
+  <h1 class=" text-2xl my-10 ">Interest Calculator</h1>
+
+  <div class="  grid grid-cols-1 gap-2 my-5 mb-10">
+    <div class=" buttons  transition-all duration-200 bg-gray-50 rounded-lg p-2  flex items-center ">
+      <p>Yearly Interest: <span class=" text-blue-900" id="yearly"></span></p>
+    </div>
+    <div class=" buttons transition-all duration-200 bg-gray-50 rounded-lg p-2 flex items-center ">
+      <p>Monthly Interest: <span class=" text-blue-900" id="monthly"></span></p>
+
+    </div>
+    <div class=" buttons  transition-all duration-200 bg-gray-50 rounded-lg p-2 flex items-center ">
+      <p>Daily Interest: <span class=" text-blue-900" id="daily"></span></p>
+    </div>
+  </div>
+  <form class="">
+
+    <div class=" flex flex-col my-2">
+      <label class=" pb-5"> Principal Amount:</label>
+      <input class="p-3  bg-gray-100 " placeholder="Enter Amount" type="number" id="principal">
+    </div>
+
+    <div class=" flex flex-col my-2">
+      <label class=" pb-5"> Interest Rate (% per annum): </label>
+      <input class="p-3  bg-gray-100 " placeholder="Enter Amount" type="number" id="rate">
+    </div>
+
+    <div class=" flex flex-col my-2">
+      <label for="number"> Time (in years):</label>
+      <input class="p-3  bg-gray-100 " placeholder="Enter Amount" type="number" id="time">
+    </div>
+
+
+    <button class=" w-full items-center bg-green-600 text-white py-3 rounded-lg my-5" type="button"
+      onclick="calculateInterest()">Calculate</button>
+  </form>
+
+  <script src="./interest.js"></script>
+</body>
+
+</html>
+
+</body>
+
+</html>
